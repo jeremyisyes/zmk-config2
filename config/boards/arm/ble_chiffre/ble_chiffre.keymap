@@ -130,7 +130,12 @@
     compatible = "zmk,keymap";
 
     default_layer {
-            bindings = <
+    //   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |
+    //   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    '    |
+    //   |    Z    |    X    |    C    |    V    |    B    |    B    |    N    |    M    |    ,    |    .    |
+    //                                   | CTRL | ENTR+fn1 | SPC | fn2 |
+	   
+	   bindings = <
     &kp Q &kp W &kp F &kp P &kp G &kp J &kp L &kp U &kp Y &kp SQT
     &hm2 LGUI A &hm LALT R &hm LCTRL S &hm1 LSHFT T &hm2 CLCK D &kp H &hm1 RSHFT N &hm RCTRL E &hm RALT I &hm2 LGUI O
     &kp Z &kp X &kp C &kp V &kp B &kp K &kp M &com_col SEMI COMMA &kp DOT &kp FSLH
