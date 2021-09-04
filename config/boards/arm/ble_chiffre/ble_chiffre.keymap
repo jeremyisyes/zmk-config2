@@ -133,8 +133,7 @@
     //   |    Q    |    W    |    E    |    R    |    T    |    Y    |    U    |    I    |    O    |    P    |
     //   |    A    |    S    |    D    |    F    |    G    |    H    |    J    |    K    |    L    |    '    |
     //   |    Z    |    X    |    C    |    V    |    B    |    B    |    N    |    M    |    ,    |    .    |
-    //                                   | CTRL | ENTR+fn1 | SPC | fn2 |
-	   
+    //                                   | CTRL | ENTR+fn1 | SPC | fn2 |   
 	   bindings = <
     &kp Q &kp W &kp F &kp P &kp G &kp J &kp L &kp U &kp Y &kp SQT
     &hm2 LGUI A &hm LALT R &hm LCTRL S &hm1 LSHFT T &hm2 CLCK D &kp H &hm1 RSHFT N &hm RCTRL E &hm RALT I &hm2 LGUI O
@@ -144,6 +143,10 @@
         };
 
     num_sym {
+    //   |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |
+    //   |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |
+    //   |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |
+    //                                 |    x    |    x    |    x    |    x    |
             bindings = <
     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
     &kp EXCL &kp AT &kp POUND &hm LSHFT DLLR &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp EQUAL &kp MINUS
@@ -153,6 +156,10 @@
         };
 
     nav {
+    //   |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |
+    //   |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |
+    //   |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |    x    |
+    //                                 |    x    |    x    |    x    |    x    |
             bindings = <
     &bt BT_SEL_CMD 0 &bt BT_SEL_CMD 1 &bt BT_SEL_CMD 2 &bt BT_SEL_CMD 3 &none &none &kp PG_UP &kp UP &none &kp BSPC
     &trans &trans &trans &trans &none &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END
