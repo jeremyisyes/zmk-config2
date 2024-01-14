@@ -1,4 +1,6 @@
 {
+  "id": "ble_chiffre",
+  "name": "ble_chiffre",
   "layouts": {
     "default_transform": {
       "name": "default_transform",
@@ -42,5 +44,6 @@
         { "row": 3, "col":  7, "x":  9.5, "y": 3.75, "r": -7.5, "rx": 6.25, "ry": 0, "u": 1.25 }
       ]
     }
-  }
+  },
+  "sensors": []
 }
