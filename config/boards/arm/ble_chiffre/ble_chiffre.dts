@@ -94,29 +94,29 @@
 	status = "okay";
 };
 
-// &i2c0 {
-// 	status = "okay";
-// 	compatible = "nordic,nrf-twi";
-// 	sda-pin = <21>;
-// 	scl-pin = <19>;
+&i2c0 {
+	status = "okay";
+	compatible = "nordic,nrf-twi";
+	sda-pin = <21>;
+	scl-pin = <19>;
 
-// 	oled: ssd1306@3c {
-// 		compatible = "solomon,ssd1306fb";
-// 		reg = <0x3c>;
-// 		label = "DISPLAY";
-// 		width = <128>;
-// 		height = <32>;
-// 		segment-offset = <0>;
-// 		page-offset = <0>;
-// 		display-offset = <0>;
-// 		multiplex-ratio = <31>;
-// 		segment-remap;
-// 		com-invdir;
-// 		com-sequential;
-// 		prechargep = <0x22>;
-// 	};
+	oled: ssd1306@3c {
+		compatible = "solomon,ssd1306fb";
+		reg = <0x3c>;
+		label = "DISPLAY";
+		width = <128>;
+		height = <32>;
+		segment-offset = <0>;
+		page-offset = <0>;
+		display-offset = <0>;
+		multiplex-ratio = <31>;
+		segment-remap;
+		com-invdir;
+		com-sequential;
+		prechargep = <0x22>;
+	};
 
-// };
+};
  
 &usbd {
 	status = "okay";
@@ -130,30 +130,30 @@
 	partitions {
 		compatible = "fixed-partitions";
 		#address-cells = <1>;
- 		#size-cells = <1>;
+		#size-cells = <1>;
 
- 		sd_partition: partition@0 {
- 			label = "softdevice";
- 			reg = <0x00000000 0x00026000>;
- 		};
- 		code_partition: partition@26000 {
- 			label = "code_partition";
- 			reg = <0x00026000 0x000c6000>;
- 		};
+		sd_partition: partition@0 {
+			label = "softdevice";
+			reg = <0x00000000 0x00026000>;
+		};
+		code_partition: partition@26000 {
+			label = "code_partition";
+			reg = <0x00026000 0x000c6000>;
+		};
 
- 		/*
- 		 * The flash starting at 0x000ec000 and ending at
- 		 * 0x000f3fff is reserved for use by the application.
- 		 */
+		/*
+		 * The flash starting at 0x000ec000 and ending at
+		 * 0x000f3fff is reserved for use by the application.
+		 */
 
- 		/*
- 		 * Storage partition will be used by FCB/LittleFS/NVS
- 		 * if enabled.
- 		 */
- 		storage_partition: partition@ec000 {
- 			label = "storage";
- 			reg = <0x000ec000 0x00008000>;
- 		};
+		/*
+		 * Storage partition will be used by FCB/LittleFS/NVS
+		 * if enabled.
+		 */
+		storage_partition: partition@ec000 {
+			label = "storage";
+			reg = <0x000ec000 0x00008000>;
+		};
 
 		boot_partition: partition@f4000 {
 			label = "adafruit_boot";
